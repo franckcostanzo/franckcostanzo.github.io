@@ -3,11 +3,37 @@
     padding: 0;
 }
 
+@viewport 
+{
+    width: device-width ;
+    zoom: 1.0 ;
+}
+
 body
 {
     height:100%;
     background: linear-gradient(90deg, white 70%, #246ff8 30%);
 
+}
+
+
+.groupe 
+{
+    transition: transform 1500ms ease;
+    transform-style: preserve-3d;
+}
+
+.scene3d 
+{
+    display:flex;
+    align-items:center;
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+
+.scene3d:hover .groupe 
+{
+    transform: rotateY(180deg);
 }
 
 img {
@@ -27,10 +53,10 @@ img {
 .header div:nth-child(1)
 {
     display:flex;
-    justify-content:center;
+    justify-content: center;
+    align-items:center;
     height:15vh;
     width: 15vw;
-    /*border: solid blueviolet;*/
     margin: 0.1em;
 }
 
@@ -58,40 +84,17 @@ h1
     color:black;
 }
 
-
-.header a:nth-child(3)
+.contact
 {
     display:flex;
     justify-content:center;
     height:10vh;
     width: 10vw;
-    transition: transform 2s;
-    margin: 0.1em;
-    /*border: solid rgb(210, 240, 15);*/
+    
 }
 
-.header a:nth-child(3):hover 
+main
 {
-    transform: rotate3d(1, 1, 1, 0.05turn);
-}
-
-.header a:nth-child(4)
-{
-    display:flex;
-    justify-content:center;
-    height:10vh;
-    width: 10vw;
-    transition: transform 2s;
-    margin: 0.1em;
-    /*border: solid blue; */
-}
-
-.header a:nth-child(4):hover 
-{
-    transform: rotate3d(1, 1, 1, 0.05turn);
-}
-
-main{
     display:flex;
     justify-content: space-around;
     align-items:center;
@@ -108,13 +111,7 @@ main div:nth-child(1)
     width: 20vw;
     transition: transform 2s;
     margin: 0.1em;
-    /*border: solid blue;*/
     
-}
-
-main div:nth-child(1):hover 
-{
-    transform: rotate3d(1, 1, 1, 0.05turn);
 }
 
 main div:nth-child(2)
@@ -125,12 +122,6 @@ main div:nth-child(2)
     width: 20vw;
     transition: transform 2s;
     margin: 0.1em;
-    /*border: solid rgb(210, 240, 15);*/
-}
-
-main div:nth-child(2):hover 
-{
-    transform: rotate3d(1, 1, 1, 0.05turn);
 }
 
 main div:nth-child(3)
@@ -141,49 +132,53 @@ main div:nth-child(3)
     width: 20vw;
     transition: transform 2s;
     margin: 0.1em;
-    /*border: solid green;*/
 }
 
-main div:nth-child(3):hover 
-{
-    transform: rotate3d(1, 1, 1, 0.05turn);
-}
 
 footer
 {
     display:flex;
     justify-content: space-between;
-    align-items:center;
     height:15vh;
     width:100%;
 }
 
-footer a:nth-child(1)
+.scene3d2
 {
     display:flex;
     justify-content:center;
+    align-items:center;
     height:10vh;
     width: 20vw;
-    /*border: solid rgb(210, 240, 15);*/
-    margin-left: 2em;
-    transition: transform 2s;
+    margin-left: 2vw;    
+    perspective: 300px;
+    transform-style: preserve-3d;
 }
 
-footer a:nth-child(1):hover {
-    transform: rotate3d(1, 1, 1, 0.05turn);
-    }
+.groupe2
+{
+    transition: transform 2500ms ease;
+    transform-style: preserve-3d;
+}
 
-footer a:nth-child(2)
+.scene3d2:hover .groupe2
+{
+    transform: rotateY(360deg);
+}
+
+.scene3d3
 {
     display:flex;
     justify-content:center;
+    align-items:center;
     height:10vh;
     width: 10vw;
-    /*border: solid rgb(210, 240, 15);*/
-    margin-right: 2em;
-    transition: transform 2s;
+    perspective: 300px;
+    margin-right: 2vw;
+    transform-style: preserve-3d;
 }
 
-footer a:nth-child(2):hover {
-    transform: rotate3d(1, 1, 1, 0.05turn);
-    }
+.scene3d3:hover .groupe
+{
+    transform: rotateY(180deg);
+}
