@@ -210,7 +210,7 @@ main
     flex-direction: column;
     margin: 0.1em;
     }
-    
+
     .secondMain div
     {
     margin-top: 0.5em;
@@ -220,7 +220,12 @@ main
     display:inline-block;
     vertical-align: top;
     padding: 00.5em;
-    }   
+    }
+
+    .imgSecond
+    {
+        width: 5vw;;
+    }
 }
 /* ---------------------FOOTER------------------------- */
 

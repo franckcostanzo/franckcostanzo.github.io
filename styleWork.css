@@ -207,6 +207,11 @@ main
     justify-content: space-evenly;
     height:5vh;
     }
+
+    .imgSecond
+    {
+        width: 5vw;;
+    }
 }
 /* ---------------------FOOTER------------------------- */
 
