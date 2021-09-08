@@ -150,7 +150,7 @@ main
     height:10vh;
 }
 
-.work
+.icons
 {
     display:flex;
     align-items:center;
@@ -159,35 +159,7 @@ main
     transform-style: preserve-3d;
 }
 
-.work:hover
-{
-    transform: rotateY(180deg);
-}
-
-.skills
-{
-    display:flex;
-    align-items:center;
-    perspective: 300px;
-    transition: transform 1500ms ease;
-    transform-style: preserve-3d;
-}
-
-.skills:hover
-{
-    transform: rotateY(180deg);
-}
-
-.studies
-{
-    display:flex;
-    align-items:center;
-    perspective: 300px;
-    transition: transform 1500ms ease;
-    transform-style: preserve-3d;
-}
-
-.studies:hover
+.icons:hover
 {
     transform: rotateY(180deg);
 }
