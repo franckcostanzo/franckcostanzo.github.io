@@ -105,6 +105,7 @@ h1
         font-size: 4vw;
         color:black;
     }
+
 }
 
 /* ---------------------MAIN------------------------- */
@@ -201,14 +202,14 @@ main
     {
     display:flex;
     justify-content:center;
-    height:10vh;    
+    height:5vh;    
     }
 
     .secondFooter
     {
     display:flex;
     justify-content: space-evenly;
-    height:10vh;
+    height:5vh;
     }
 }
 /* ---------------------FOOTER------------------------- */

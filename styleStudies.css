@@ -123,19 +123,6 @@ main
     margin: 0.1em;
     
 }
-.work
-{
-    display:flex;
-    align-items:center;
-    perspective: 300px;
-    transition: transform 1500ms ease;
-    transform-style: preserve-3d;
-}
-
-.work:hover
-{
-    transform: rotateY(180deg);
-}
 
 .secondMain
 {
@@ -196,20 +183,34 @@ main
     transform: rotateY(180deg);
 }
 
+.work
+{
+    display:flex;
+    align-items:center;
+    perspective: 300px;
+    transition: transform 1500ms ease;
+    transform-style: preserve-3d;
+}
+
+.work:hover
+{
+    transform: rotateY(180deg);
+}
+
 @media screen and (max-width: 700px) {
     
     .secondHeader
     {
     display:flex;
     justify-content:center;
-    height:10vh;    
+    height:5vh;    
     }
 
     .secondFooter
     {
     display:flex;
     justify-content: space-evenly;
-    height:10vh;
+    height:5vh;
     }
 }
 
