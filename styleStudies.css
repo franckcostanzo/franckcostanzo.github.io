@@ -184,6 +184,11 @@ main
     height:5vh;
     }
 
+    .secondMain
+    {
+    margin: 1em 0.1em;
+    }
+
     .icons
     {
         display:flex;

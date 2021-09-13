@@ -171,9 +171,9 @@ main
 
     .secondMain
     {
-    display:flex;
-    flex-direction: column;
-    margin: 0.1em;
+    display:block;
+    justify-content: left;
+    margin: 1em 0.1em;
     }
 
     .secondMain div
