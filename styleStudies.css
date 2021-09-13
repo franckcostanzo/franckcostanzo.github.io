@@ -65,7 +65,6 @@ img {
     height:18vh;
     width: 70vw;
     text-align: center;
-    /*border: solid green;*/
     margin: 0.1em;
 }
 
@@ -177,11 +176,17 @@ main
     height:5vh;    
     }
 
+    .imgSecond
+    {
+    width:20vh;
+    }  
+     
     .secondFooter
     {
     display:flex;
     justify-content: space-evenly;
     height:5vh;
+    margin: 2vh 0;
     }
 
     .secondMain
@@ -208,7 +213,8 @@ footer
     justify-content: space-between;
     align-items:center;
     height:15vh;
-    width:100%;
+    width:100%;    
+    margin-top: 2vh;
 }
 
 .scene3d2

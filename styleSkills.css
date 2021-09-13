@@ -167,6 +167,7 @@ main
     display:flex;
     justify-content: space-evenly;
     height:5vh;
+    margin: 2vh 0;
     }
 
     .secondMain
@@ -206,6 +207,7 @@ footer
     align-items:center;
     height:15vh;
     width:100%;
+    margin-top: 2vh;
 }
 
 .scene3d2
