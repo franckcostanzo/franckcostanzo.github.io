@@ -9,6 +9,7 @@
     zoom: 1.0 ;
 }
 
+
 .groupe 
 {
     transition: transform 1500ms ease;
@@ -103,48 +104,106 @@ header p
     }
 }
 
-
 /* ---------------------MAIN------------------------- */
 
 main
 {
     display:flex;
-    justify-content: space-around;
-    align-items:center;
-    height:60vh;
-    width:100%;
-
+    flex-direction: column;
 }
 
-main div:nth-child(1)
+.secondHeader
 {
     display:flex;
     justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
+    height:10vh;
     margin: 0.1em;
     
 }
 
-main div:nth-child(2)
+.secondMain
 {
     display:flex;
-    justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
+    flex-direction: column;
     margin: 0.1em;
 }
 
-main div:nth-child(3)
+.secondMain div
+{
+    margin-top: 0.5em;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    display:inline-block;
+    vertical-align: top;
+    padding: 00.5em;
+}
+
+.imgSecond
+{
+    height:10vh;
+    width:10vh;
+}
+
+.secondFooter
 {
     display:flex;
+    justify-content: space-evenly;
+    height:10vh;
+}
+
+.icons
+{
+    display:flex;
+    align-items:center;
+    perspective: 300px;
+    transition: transform 1500ms ease;
+    transform-style: preserve-3d;
+}
+
+.icons:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .secondHeader
+    {
+    display:flex;
     justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
-    margin: 0.1em;
+    height:5vh;    
+    }
+
+    .imgSecond
+    {
+    width:20vh;
+    }  
+     
+    .secondFooter
+    {
+    display:flex;
+    justify-content: space-evenly;
+    height:5vh;
+    margin: 2vh 0;
+    }
+
+    .secondMain
+    {
+    margin: 1em 0.1em;
+    }
+
+    .icons
+    {
+        display:flex;
+        align-items:center;
+        perspective: 300px;
+        height:10vh;
+        width:10vw;
+        transition: transform 1500ms ease;
+        transform-style: preserve-3d;
+    }
 }
 
 /* ---------------------FOOTER------------------------- */
@@ -154,7 +213,7 @@ footer
     justify-content: space-between;
     align-items:center;
     height:15vh;
-    width:100%;
+    width:100%;    
     margin-top: 2vh;
 }
 

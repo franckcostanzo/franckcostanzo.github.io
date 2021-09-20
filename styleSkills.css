@@ -103,50 +103,104 @@ header p
     }
 }
 
-
 /* ---------------------MAIN------------------------- */
 
 main
 {
     display:flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.secondHeader
+{
+    display:flex;
+    justify-content:center;
+    height:10vh;  
+}
+
+.secondMain
+{
+    display:flex;
+    justify-content:center;    
+    margin-left: 2%;  
+}
+
+.secondMain div
+{
+    display:inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: top;
+    padding: 00.5em;
+}
+
+.secondFooter
+{
+    display:flex;
+    justify-content: space-evenly;
+    height:10vh;
+}
+
+.icons
+{
+    display:flex;
     align-items:center;
-    height:60vh;
-    width:100%;
-
+    perspective: 300px;
+    transition: transform 1500ms ease;
+    transform-style: preserve-3d;
 }
 
-main div:nth-child(1)
+.icons:hover
 {
-    display:flex;
-    justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
-    margin: 0.1em;
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 700px) {
     
-}
-
-main div:nth-child(2)
-{
+    .secondHeader
+    {
     display:flex;
     justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
-    margin: 0.1em;
-}
+    height:5vh;    
+    }
 
-main div:nth-child(3)
-{
+    .secondFooter
+    {
     display:flex;
-    justify-content:center;
-    height:20vh;
-    width: 20vw;
-    transition: transform 2s;
-    margin: 0.1em;
-}
+    justify-content: space-evenly;
+    height:5vh;
+    margin: 2vh 0;
+    }
 
+    .secondMain
+    {
+    display:block;
+    justify-content: left;
+    margin: 1em 0.1em;
+    }
+
+    .secondMain div
+    {
+    margin-top: 0.5em;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    display:inline-block;
+    vertical-align: top;
+    padding: 00.5em;
+    }
+
+    .icons
+    {
+    display:flex;
+    align-items:center;
+    perspective: 300px;
+    height:10vh;
+    width:10vw;
+    transition: transform 1500ms ease;
+    transform-style: preserve-3d;
+    }
+}
 /* ---------------------FOOTER------------------------- */
 footer
 {
